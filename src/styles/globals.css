@@ -1,0 +1,341 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.nav {
+    background-color: #101826;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+}
+
+
+
+.text {
+    color: whitesmoke;
+    font-size: 20px;
+
+}
+
+.name {
+    color: white;
+    align-items: center;
+    text-align: center;
+
+
+
+
+}
+
+.image {
+    background-image: url(../../public/analitics.webp);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    align-items: center;
+    flex: auto;
+}
+
+.images {
+    background-image: url(../../public/foto\ aip.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 99%;
+
+}
+
+.images2 {
+    background-image: url(../../public/fotos\ inicio.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 99%;
+
+}
+
+.title {
+    color: white;
+    font-weight: bold;
+
+
+
+}
+
+.Typewriter {
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+
+}
+
+.pres {
+    color: white;
+    text-align: center;
+}
+
+.line {
+    background-color: #185a94;
+}
+
+#title {
+    color: white;
+}
+
+.abt {
+    background-color: #101826;
+    color: whitesmoke;
+    background-size: cover;
+
+
+}
+
+.box {
+    color: white;
+}
+
+.border {
+
+    border-radius: 5px;
+    padding-left: 2px;
+    padding-top: 1px;
+
+    box-shadow: 12px 5px black;
+
+
+
+
+}
+
+.border:hover {
+
+    border-radius: 5px;
+    box-shadow: 7px 10px 25px 1px #c5e6f0;
+    transition: all 0.9s linear;
+
+
+
+}
+
+.bit {
+    color: white;
+    font-size: 90px;
+    text-align: center;
+}
+
+.view {
+    background-color: #0d1317;
+    box-shadow: 1px 1px white;
+    transition: all 0.9s linear;
+    background-image: url(../../public/Arduino_Logo_Registered.svg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+
+
+
+/*Code for stack overflow for put the responsive on the application*/
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {}
+
+
+.text-container {
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 8px; 
+    
+    border-radius: 10px; 
+    color: white; 
+   
+  }
+
+.me{
+    margin-left: 15%;
+}
+
+
+.book {
+	width: 350px;
+	height: 450px;
+	position: relative;
+	transition-duration: 1s;
+	perspective: 1500px;
+}
+input {
+	display: none;
+}
+.cover, .back-cover {
+	background-color: #4173a5;
+	width: 100%;
+	height: 100%;
+	border-radius: 0 15px 15px 0;
+	box-shadow: 0 0 5px rgb(41, 41, 41);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transform-origin: center left;
+}
+.cover {
+	position: absolute;
+	z-index: 4;
+	transition: transform 1s;
+}
+.cover label {
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+}
+.back-cover {
+	position: relative;
+	z-index: -1;
+}
+.page {
+	position: absolute;
+	background-color: white;
+	width: 330px;
+	height: 430px;
+	border-radius: 0 15px 15px 0;
+	margin-top: 10px;
+	transform-origin: left;
+	transform-style: preserve-3d    ;
+	transform: rotateY(0deg);
+	transition-duration: 1.5s;
+}
+.page img {
+	width: 95%;
+	height: 50%;
+	border-radius: 15px 0 0 15px;
+}
+.front-page {
+	position: static;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden !important;
+	box-sizing: border-box;
+	padding: 1rem;
+}
+.back-page {
+	transform: rotateY(180deg);
+	position: static;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden  !important; 
+	z-index: 99;
+}
+.next, .prev {
+	position: absolute;
+	bottom: 1em;
+	cursor: pointer;
+}
+.next {
+	right: 1em;
+}
+.prev {
+	left: 10%;
+}
+#page1 {
+	z-index: 3;
+}
+#page2 {
+	z-index: 2;
+}
+#page3 {
+	z-index: 1;
+}
+#checkbox-cover:checked ~ .book {
+	transform: translateX(200px);
+}
+#checkbox-cover:checked ~ .book .cover {
+	transition: transform 1.5s, z-index 0.5s 0.5s;
+	transform: rotateY(-180deg);
+	z-index: 1;
+}
+#checkbox-cover:checked ~ .book .page {
+	box-shadow: 0 0 3px rgb(99, 98, 98);
+}
+#checkbox-page1:checked ~ .book #page1 {
+	transform: rotateY(-180deg);
+	z-index: 2;
+}
+#checkbox-page2:checked ~ .book #page2 {
+	transform: rotateY(-180deg);
+	z-index: 3;
+}
+
+.portada{
+    margin-left: 51px;
+}
+
+
+#imagen1 {
+    position: static;
+    margin-left: 100px;
+    max-width: 100%;
+    height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    padding: 10px;
+    
+}
+
+#imagen2 {
+    position: static;
+    margin-left: 100px;
+    max-width: 100%;
+    height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    padding: 10px;
+    
+}
+
+.txt1{
+    color: white;
+}
+
+#video{
+    margin-top: 5px;
+    height: auto;
+    display: cover;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px; 
+    max-width: 100%;
+  
+
+}
+
+
+#videocel {
+    margin-top: 5px;
+    height: auto;
+    display: cover;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px; 
+    max-width: 200%;
+    rotate: 270deg;
+
+}
