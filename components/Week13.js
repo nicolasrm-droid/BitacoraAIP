@@ -7,7 +7,7 @@ const video = () => {
             <Heading title="Bitacora - Semana13 - Semana 14" />
 
 
-            <div id='video' alt="video">
+            {/* <div id='video' alt="video">
                 <video controls muted type="video.mp4">
                     <source src="SARA HABANDO.mp4" />
                 </video>
@@ -23,7 +23,7 @@ const video = () => {
                 <video controls muted type="video.mp4">
                     <source src="WhatsApp Video 2023-11-03 at 17.50.02.mp4" />
                 </video>
-            </div>
+            </div> */}
 
             <div id='video' alt="video">
                 <video controls muted type="video.mp4">
